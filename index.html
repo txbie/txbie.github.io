@@ -3,14 +3,88 @@ layout: default
 title: Ty "Tongxuan" Bie
 ---
 
-<h1>Hi, I'm Ty</h1>
-<p>I'm a digital marketer and data scientist. Welcome to my personal website!</p>
+<style>
+  body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .top-right-links {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 10;
+  }
+  .top-right-links a {
+    margin-left: 15px;
+    color: #333;
+    background: rgba(255,255,255,0.7);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  .top-right-links a:hover {
+    background: #e0e0e0;
+  }
+  .button-container {
+    display: flex;
+    gap: 2em;
+    margin-top: 3em;
+    justify-content: center;
+  }
+  .big-button {
+    flex:1;
+    text-align:center;
+    font-size:2em;
+    padding:2em;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:bold;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    margin: 0 1em;
+  }
+  .marketing-btn {
+    background: #cce7ff;
+    color: #1a237e;
+  }
+  .marketing-btn:hover {
+    background: #b3daff;
+  }
+  .analytics-btn {
+    background: #fff9c4;
+    color: #b28900;
+  }
+  .analytics-btn:hover {
+    background: #fff59d;
+  }
+  .center-content {
+    margin-top: 8em;
+    background: rgba(255,255,255,0.85);
+    padding: 2em 3em;
+    border-radius: 20px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  }
+</style>
 
-<div style="display: flex; gap: 2em; margin-top: 2em;">
-  <a href="marketing.html" style="flex:1; text-align:center; background:#2ecc40; color:white; font-size:2em; padding:2em; border-radius:20px; text-decoration:none; font-weight:bold;">
-    Marketing
-  </a>
-  <a href="analytics.html" style="flex:1; text-align:center; background:#0074d9; color:white; font-size:2em; padding:2em; border-radius:20px; text-decoration:none; font-weight:bold;">
-    Data Analytics
-  </a>
+<div class="top-right-links">
+  <a href="https://instagram.com/your_instagram" target="_blank">Instagram</a>
+  <a href="https://linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a>
+</div>
+
+<div class="center-content">
+  <h1>Hi, I'm Ty</h1>
+  <p>I'm a digital marketer and data scientist. Welcome to my personal website!</p>
+
+  <div class="button-container">
+    <a href="marketing.html" class="big-button marketing-btn">Marketing</a>
+    <a href="analytics.html" class="big-button analytics-btn">Data Analytics</a>
+  </div>
 </div>
